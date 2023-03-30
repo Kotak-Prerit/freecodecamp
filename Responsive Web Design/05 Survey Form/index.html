@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="https://www.freeiconspng.com/thumbs/survey-icon/survey-icon-12.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Prerit's Survey Form</h1>
+      <p id="description">
+        <i
+          >We appreciate your feedback. Please take a moment to complete this
+          survey.</i
+        >
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age</label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            min="18"
+            max="99"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown" id="dropdown-label"
+            >How did you hear about us?</label
+          >
+          <select id="dropdown" name="how-heard" required>
+            <option value="">Select an option</option>
+            <option value="Friend">Friend</option>
+            <option value="Social media">Social media</option>
+            <option value="Online search">Online search</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <fieldset class="device">
+            <legend>
+              What type of device do you use to access the internet?
+            </legend>
+            <label>
+              <input type="radio" name="device" value="Desktop" />Desktop
+            </label>
+            <label>
+              <input type="radio" name="device" value="Laptop" />Laptop
+            </label>
+            <label>
+              <input type="radio" name="device" value="Tablet" />Tablet
+            </label>
+            <label>
+              <input type="radio" name="device" value="Mobile" />Mobile
+            </label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <fieldset class="features">
+            <legend>
+              Which features do you find most useful on our website?
+              <span><i>(Select all that apply)</i></span>
+            </legend>
+            <label>
+              <input type="checkbox" name="features" value="Search bar" />Search
+              bar
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="features"
+                value="Filtering options"
+              />Filtering options
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="features"
+                value="Product reviews"
+              />Product reviews
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                name="features"
+                value="Compare products"
+              />Compare products
+            </label>
+            <label>
+              <input type="checkbox" name="features" value="Wish list" />Wish
+              list
+            </label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="comments">Additional comments:</label>
+          <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

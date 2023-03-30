@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+  color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+}
+
+#survey-form {
+  background-color: rgba(27, 27, 50, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font-size: 36px;
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+
+#description {
+  width: 80%;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  width: 90%;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+label {
+  display: flex;
+  font-size: 18px;
+}
+
+legend {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+}
+
+span {
+  font-size: 16px;
+}
+
+.device {
+  margin: 30px 0 0 0;
+  padding: 0;
+  border: none;
+}
+
+.features {
+  border: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#submit {
+  background-color: #37af65;
+  width: 100%;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 18px;
+}
